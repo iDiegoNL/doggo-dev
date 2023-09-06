@@ -43,78 +43,91 @@ export default function Uses() {
   return (
     <SimpleLayout
       title="Software I use, gadgets I love, and other things I recommend."
-      intro="I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favorite stuff."
+      intro="What's the purpose of being a developer if you can't talk about your fancy products? Here's a list of the things I use on a daily basis."
     >
       <div className="space-y-20">
         <ToolsSection title="Workstation">
-          <Tool title="16” MacBook Pro, M1 Max, 64GB RAM (2021)">
-            I was using an Intel-based 16” MacBook Pro prior to this and the
-            difference is night and day. I’ve never heard the fans turn on a
-            single time, even under the incredibly heavy loads I put it through
-            with our various launch simulations.
+          <Tool title="AMD Ryzen 9 5900X, RTX 3070, 64GB DDR4 RAM @ 3.600MT/s">
+            My desktop machine is my pride and joy. Featuring some fancy
+            hardware, NZXT watercooling, RGB and storage for days. It’s the
+            perfect machine for my needs.
           </Tool>
-          <Tool title="Apple Pro Display XDR (Standard Glass)">
-            The only display on the market if you want something HiDPI and
-            bigger than 27”. When you’re working at planetary scale, every pixel
-            you can get counts.
+          <Tool title="13,6” MacBook Air, M2, 16GB RAM (2022)">
+            I was using a Dell XPS prior to switching to Apple, and I’m very
+            happy with my choice. The M2 chip is blazing fast, and the battery
+            life is amazing.
           </Tool>
-          <Tool title="IBM Model M SSK Industrial Keyboard">
-            They don’t make keyboards the way they used to. I buy these any time
-            I see them go up for sale and keep them in storage in case I need
-            parts or need to retire my main.
+          <Tool title="27” Samsung Odyssey G5">
+            The perfect combination of size, resolution, and refresh rate.
+            Outside of my working hours I love watching series on Netflix and
+            playing games, and this monitor is a great choice for both.
           </Tool>
-          <Tool title="Apple Magic Trackpad">
-            Something about all the gestures makes me feel like a wizard with
-            special powers. I really like feeling like a wizard with special
-            powers.
+          <Tool title="Corsair Gaming K95 RGB Platinum Cherry">
+            I’ve been using this keyboard for years now and I’m still very happy
+            with it. I’m a huge fan of the Cherry MX Brown switches, and with
+            the marco keys and media controls it’s the perfect keyboard for me.
           </Tool>
-          <Tool title="Herman Miller Aeron Chair">
-            If I’m going to slouch in the worst ergonomic position imaginable
-            all day, I might as well do it in an expensive chair.
+          <Tool title="Logitech MX Master 3">
+            This mouse shouldn’t need an introduction. Logitech’s MX series are
+            the best mice that I have ever used, and I’ll never switch to
+            something else.
+          </Tool>
+          <Tool title="IKEA Markus">
+            It’s a chair. It’s comfortable. It’s cheap. What else is there to
+            say?
+          </Tool>
+        </ToolsSection>
+        <ToolsSection title="Audio setup">
+          <Tool title="Sony WH-1000XM5">
+            My go-to headphones for when I’m not home. Amazing sound quality,
+            noise cancellation and battery life.
+          </Tool>
+          <Tool title="Sony WF-1000XM4">
+            My go-to earbuds for when I’m on the go. The noise cancellation is
+            great, and so is the sound quality. I travel a lot, and these are
+            the perfect companion for that.
+          </Tool>
+          <Tool title="Sennheiser HD 660 S">
+            In my opinion one of the best value for money headphones out there.
+            They’re comfortable, and the sound quality is amazing.
+          </Tool>
+          <Tool title="Focusrite Scarlett 2i2">
+            This audio interface functions as my headphone and speaker output,
+            and the input for my microphone. Also, the two input channels are
+            really handy for quickly mixing in other audio sources.
+          </Tool>
+          <Tool title="Audio-Technica AT2020">
+            For only € 90 this microphone is a steal. The sound quality is
+            amazing, so that I can sound crispy clear during meetings.
           </Tool>
         </ToolsSection>
         <ToolsSection title="Development tools">
-          <Tool title="Sublime Text 4">
-            I don’t care if it’s missing all of the fancy IDE features everyone
-            else relies on, Sublime Text is still the best text editor ever
-            made.
+          <Tool title="PhpStorm">
+            My IDE of choice. I’ve been using it for years now, and I’m still
+            very happy with it. I’ve heavily customized it with plugins and
+            themes by now, and will probably never switch to anything else.
           </Tool>
-          <Tool title="iTerm2">
-            I’m honestly not even sure what features I get with this that aren’t
-            just part of the macOS Terminal but it’s what I use.
+          <Tool title="Tinkerwell">
+            If you love Laravel Tinker, you’ll love Tinkerwell even more. It’s
+            an amazing tool for quickly running code snippets, while having the
+            hot-reload that I miss with Tinker.
           </Tool>
-          <Tool title="TablePlus">
-            Great software for working with databases. Has saved me from
-            building about a thousand admin interfaces for my various projects
-            over the years.
+          <Tool title="Spatie Ray">
+            My favorite debugging tool. Super easy to use, and it’s a great way
+            to quickly debug code of any application.
           </Tool>
         </ToolsSection>
-        <ToolsSection title="Design">
-          <Tool title="Figma">
-            We started using Figma as just a design tool but now it’s become our
-            virtual whiteboard for the entire company. Never would have expected
-            the collaboration features to be the real hook.
+        <ToolsSection title="Tech stack">
+          <Tool title="Laravel, Livewire, Tailwind CSS, Alpine.js and Vue.js">
+            My favourite PHP framework. Whenever I start a new project, I don’t
+            even need to think about what framework to use, because I know that
+            Laravel is the best choice for me.
           </Tool>
         </ToolsSection>
         <ToolsSection title="Productivity">
-          <Tool title="Alfred">
-            It’s not the newest kid on the block but it’s still the fastest. The
-            Sublime Text of the application launcher world.
-          </Tool>
-          <Tool title="Reflect">
-            Using a daily notes system instead of trying to keep things
-            organized by topics has been super powerful for me. And with
-            Reflect, it’s still easy for me to keep all of that stuff
-            discoverable by topic even though all of my writing happens in the
-            daily note.
-          </Tool>
-          <Tool title="SavvyCal">
-            Great tool for scheduling meetings while protecting my calendar and
-            making sure I still have lots of time for deep work during the week.
-          </Tool>
-          <Tool title="Focus">
-            Simple tool for blocking distracting websites when I need to just do
-            the work and get some momentum going.
+          <Tool title="Notion">
+            From quickly taking notes to writing to-do lists and standup
+            reports, Notion is my go-to text editor.
           </Tool>
         </ToolsSection>
       </div>

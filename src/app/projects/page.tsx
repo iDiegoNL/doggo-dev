@@ -3,47 +3,125 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import { Badge } from '@/components/Badge'
+
+import logoAwoostria from '@/images/logos/awoostria.png'
+import logoArtisticAnthro from '@/images/logos/artisticanthro.png'
+import logoTruckersmp from '@/images/logos/truckersmp.png'
+import logoPhoenix from '@/images/logos/phoenix.png'
+import logoVivaTrucking from '@/images/logos/viva-trucking.png'
+import logoUpcheck from '@/images/logos/upcheck.png'
+import iconCupTogoDuotone from '@/images/icons/cup-togo-duotone.svg'
+import iconCartShoppingDuotone from '@/images/icons/cart-shopping-duotone.svg'
+import iconIslandTropicalDuotone from '@/images/icons/island-tropical-duotone.svg'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'Awoostria Website',
+    badge: { label: '2023 - Present' },
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+      'Awoostria is a non-profit organization that organizes events and conventions for the furry fandom. Built with Laravel, Livewire, Alpine.js and Tailwind CSS.',
+    logo: logoAwoostria,
   },
   {
-    name: 'Animaginary',
+    name: 'ArtisticAnthro',
+    badge: { label: '2022 - Present' },
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+      'ArtisticAnthro is a revolutionary platform for artists and art lovers, providing seamless commission management. Built with Laravel, Livewire, Alpine.js and Tailwind CSS.',
+    link: {
+      href: 'https://artisticanthro.com',
+      label: 'artisticanthro.com',
+      external: true,
+    },
+    logo: logoArtisticAnthro,
   },
   {
-    name: 'HelioStream',
+    name: 'TruckersMP',
+    badge: { label: '2022' },
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
+      'The main website for TruckersMP. This handles everything from users to recruitment, blog posts and more. Built with Laravel.',
+    link: {
+      href: 'https://truckersmp.com',
+      label: 'truckersmp.com',
+      external: true,
+    },
+    logo: logoTruckersmp,
   },
   {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
+    name: 'TruckersMP API Client',
+    badge: { label: '2022' },
+    description: 'A PHP client for the TruckersMP API, built with Guzzle.',
+    link: {
+      href: 'https://github.com/TruckersMP/API-Client',
+      label: 'github.com',
+      external: true,
+    },
+    logo: logoTruckersmp,
   },
   {
-    name: 'OpenShuttle',
+    name: 'Phoenix CMS',
+    badge: { label: '2021 - 2022' },
     description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
+      'A CMS for managing the PhoenixVTC website. Built with Craft CMS, Tailwind CSS and Alpine.js.',
+    logo: logoPhoenix,
+  },
+  {
+    name: 'PhoenixBase',
+    badge: { label: '2020 - 2022' },
+    description:
+      'A dashboard for PhoenixVTC drivers. This handles everything from recruitment to virtual job submissions. Built with Laravel, Livewire, Tailwind CSS and Alpine.js.',
+    logo: logoPhoenix,
+  },
+  {
+    name: 'Phoenix Tracker',
+    badge: { label: '2021 - 2022' },
+    description:
+      'An Electron app for tracking deliveries in the game Euro Truck Simulator 2. Built with Electron, Vue.js and Tailwind CSS.',
+    logo: logoPhoenix,
+  },
+  {
+    name: 'Viva Trucking DriversHub',
+    badge: { label: '2020' },
+    description:
+      'A dashboard for Viva Trucking drivers. This handles everything from recruitment to virtual job submissions. Built with Laravel and Bootstrap.',
+    link: {
+      href: 'https://vivatrucks.com',
+      label: 'vivatrucks.com',
+      external: true,
+    },
+    logo: logoVivaTrucking,
+  },
+  {
+    name: 'Coffee Order',
+    badge: { label: '2020' },
+    description:
+      'A simple coffee order app built with Laravel and Tailwind CSS. This again was a school project, and the first project where I used Tailwind CSS.',
+    link: {
+      href: 'https://github.com/iDiegoNL/coffee-order',
+      label: 'github.com',
+    },
+    logo: iconCupTogoDuotone,
+  },
+  {
+    name: 'Bani Supermarkt',
+    badge: { label: '2019' },
+    description:
+      'Bani Supermarkt is a fictional supermarket for a school project. Built with Laravel and Semantic UI.',
+    logo: iconCartShoppingDuotone,
+  },
+  {
+    name: 'TripPlanner',
+    badge: { label: '2019' },
+    description:
+      'TripPlanner is a web application that allows you to plan your trips and share them with your friends.',
+    logo: iconIslandTropicalDuotone,
+  },
+  {
+    name: 'UpCheck',
+    badge: { label: '2019' },
+    description:
+      'UpCheck is a simple uptime monitoring tool that allows you to monitor your websites and servers. Built with Laravel and Tabler.',
+    logo: logoUpcheck,
   },
 ]
 
@@ -60,14 +138,15 @@ function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export const metadata: Metadata = {
   title: 'Projects',
-  description: 'Things I’ve made trying to put my dent in the universe.',
+  description:
+    "My favourite hobby is coding, even though it's my main job as well. These personal projects are mostly side projects that I've worked on in my free time. I've learned a lot from them and I'm proud to showcase them.",
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Things I’ve made trying to put my dent in the universe."
-      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+      title="Personal Projects"
+      intro="My favourite hobby is coding, even though it's my main job as well. These personal projects are mostly side projects that I've worked on in my free time. I've learned a lot from them and I'm proud to showcase them."
     >
       <ul
         role="list"
@@ -83,14 +162,35 @@ export default function Projects() {
                 unoptimized
               />
             </div>
-            <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-              <Card.Link href={project.link.href}>{project.name}</Card.Link>
-            </h2>
+            {project.link ? (
+              <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+                <Card.Link
+                  href={project.link.href}
+                  target={project.link.external ? '_blank' : '_self'}
+                >
+                  {project.name}
+                  {project.badge ? (
+                    <Badge className="ml-2">{project.badge.label}</Badge>
+                  ) : null}
+                </Card.Link>
+              </h2>
+            ) : (
+              <div className="mt-6 flex items-baseline text-base font-semibold text-zinc-800 dark:text-zinc-100">
+                <Card.Title>{project.name}</Card.Title>
+                {project.badge ? (
+                  <Badge className="ml-2">{project.badge.label}</Badge>
+                ) : null}
+              </div>
+            )}
             <Card.Description>{project.description}</Card.Description>
-            <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
-              <LinkIcon className="h-6 w-6 flex-none" />
-              <span className="ml-2">{project.link.label}</span>
-            </p>
+            {project.link ? (
+              <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
+                <LinkIcon className="h-6 w-6 flex-none" />
+                <span className="ml-2">{project.link.label}</span>
+              </p>
+            ) : (
+              ''
+            )}
           </Card>
         ))}
       </ul>
