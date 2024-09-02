@@ -48,17 +48,6 @@ const projects = [
     logo: logoTruckersmp,
   },
   {
-    name: 'TruckersMP API Client',
-    badge: { label: '2022' },
-    description: 'A PHP client for the TruckersMP API, built with Guzzle.',
-    link: {
-      href: 'https://github.com/TruckersMP/API-Client',
-      label: 'github.com',
-      external: true,
-    },
-    logo: logoTruckersmp,
-  },
-  {
     name: 'Phoenix CMS',
     badge: { label: '2021 - 2022' },
     description:
