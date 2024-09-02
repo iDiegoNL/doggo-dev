@@ -91,38 +91,6 @@ const projects = [
     },
     logo: logoVivaTrucking,
   },
-  {
-    name: 'Coffee Order',
-    badge: { label: '2020' },
-    description:
-      'A simple coffee order app built with Laravel and Tailwind CSS. This again was a school project, and the first project where I used Tailwind CSS.',
-    link: {
-      href: 'https://github.com/iDiegoNL/coffee-order',
-      label: 'github.com',
-    },
-    logo: iconCupTogoDuotone,
-  },
-  {
-    name: 'Bani Supermarkt',
-    badge: { label: '2019' },
-    description:
-      'Bani Supermarkt is a fictional supermarket for a school project. Built with Laravel and Semantic UI.',
-    logo: iconCartShoppingDuotone,
-  },
-  {
-    name: 'TripPlanner',
-    badge: { label: '2019' },
-    description:
-      'TripPlanner is a web application that allows you to plan your trips and share them with your friends.',
-    logo: iconIslandTropicalDuotone,
-  },
-  {
-    name: 'UpCheck',
-    badge: { label: '2019' },
-    description:
-      'UpCheck is a simple uptime monitoring tool that allows you to monitor your websites and servers. Built with Laravel and Tabler.',
-    logo: logoUpcheck,
-  },
 ]
 
 function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
