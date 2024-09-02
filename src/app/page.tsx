@@ -255,12 +255,6 @@ export default async function Home() {
                 icon={BlueskyIcon}
               />
               <SocialLink
-                href="https://github.com/iDiegoNL"
-                target="_blank"
-                aria-label="Follow me on GitHub"
-                icon={GitHubIcon}
-              />
-              <SocialLink
                 href="https://t.me/DotDoggo"
                 target="_blank"
                 aria-label="Message me on Telegram"
