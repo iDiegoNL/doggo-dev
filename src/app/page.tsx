@@ -230,7 +230,7 @@ export default async function Home() {
             </h1>
             <div className="mt-6 space-y-4 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                Heyo! I’m Diego, a 21-year-old non-binary furry that currently
+                Heyo! I’m Diego, a 22-year-old fur that currently
                 lives in Prague. Any pronouns are fine, but they/them is
                 preferred. I also respond to the nicknames Doggo or Dot!
               </p>
