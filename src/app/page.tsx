@@ -226,7 +226,7 @@ export default async function Home() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              21 y/o · Shiba Inu · Developer · Digital Nomad
+              22 y/o · Shiba Inu · Software Engineer
             </h1>
             <div className="mt-6 space-y-4 text-base text-zinc-600 dark:text-zinc-400">
               <p>
