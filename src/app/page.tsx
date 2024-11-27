@@ -230,9 +230,9 @@ export default async function Home() {
             </h1>
             <div className="mt-6 space-y-4 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                Heyo! I’m Diego, a 22-year-old fur that currently
+                Heyo! I’m Dot, a 22-year-old fur that currently
                 lives in Prague. Any pronouns are fine, but they/them is
-                preferred. I also respond to the nicknames Doggo or Dot!
+                preferred.
               </p>
               <p>
                 In my free time, you’ll probably find me either coding,
