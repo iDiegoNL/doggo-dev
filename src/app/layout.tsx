@@ -8,9 +8,9 @@ import '@/styles/tailwind.css'
 export const metadata: Metadata = {
   title: {
     template: '%s - DoggoDot',
-    default: 'DoggoDot - Diego',
+    default: 'DoggoDot',
   },
-  description: '21 y/o · Shiba Inu · Developer · Digital Nomad',
+  description: 'arf arf',
 }
 
 export default function RootLayout({
